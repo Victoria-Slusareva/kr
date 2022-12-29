@@ -1,0 +1,110 @@
+{
+    "ShowLogs": true,
+    "QMainWindow": [{
+        "title": "Game_DB"
+    }],
+    "QSettings": [{
+        "ThemeSettings": [{
+            "CustomTheme": [{
+                "Background-color": "#1f232a",
+                "Text-color": "#fff",
+                "Accent-color": "#755D90",
+                "Theme-name": "Default-Dark",
+                "Icons-color": "#fff",
+                "Default-Theme": true
+            }]
+        }],
+        "AppSettings": {
+            "OrginazationNamee": "Game_DB",
+            "ApplicationName": "Game_DB Company",
+            "OrganizationDormain": "Game_DB.org"
+        }
+    }],
+    "QCustomSlideMenu": [{
+            "name": "leftMenu",
+            "defaultSize": [{
+                "width": 0,
+                "height": "parent"
+            }],
+            "collapsedSize": [{
+                "width": 0,
+                "height": "parent"
+            }],
+            "expandedSize": [{
+                "width": 250,
+                "height": "parent"
+            }],
+            "toggleButton": [{
+                "buttonName": "menuBtn",
+                "icons": [{
+                    "whenMenuIsCollapsed": ":/icons/Icons/align-justify.png",
+                    "whenMenuIsExpanded": ":/icons/Icons/chevron-left.png"
+                }]
+            }],
+            "menuTransitionAnimation": [{
+                "animationDuration": 500,
+                "animationEasingCurve": "Linear"
+            }]
+        },
+        {
+            "name": "rightMenu",
+            "defaultSize": [{
+                "width": 0,
+                "height": "parent"
+            }],
+            "collapsedSize": [{
+                "width": 0,
+                "height": "parent"
+            }],
+            "expandedSize": [{
+                "width": 250,
+                "height": "parent"
+            }],
+            "toggleButton": [{
+                "buttonName": "homeSearchBtn",
+                "icons": [{
+                    "whenMenuIsCollapsed": ":/icons/Icons/search.png",
+                    "whenMenuIsExpanded": ":/icons/Icons/window_close.png"
+                }]
+            }],
+            "menuTransitionAnimation": [{
+                "animationDuration": 500,
+                "animationEasingCurve": "Linear"
+            }]
+        }
+    ],
+    "QPushButtonGroup": [{
+        "Buttons": [
+            "linePlotBtn",
+            "ratingPlotBtn"
+        ],
+        "Style": [{
+            "Active": "background-color: #1f232a; border-bottom: 3px solid #755D90; font-weight: bold;",
+            "NotActive": "background-color: transparent; border: none; font-weight: normal;"
+        }]
+    }],
+    "QStackedWidget": [{
+        "name": "mainPages",
+        "transitionAnimation": [{
+            "fade": [{
+                "active": true,
+                "duration": 1000,
+                "easingCurve": "OutBack"
+            }],
+            "slide": [{
+                "active": true,
+                "duration": 1000,
+                "direction": "horizontal",
+                "easingCurve": "OutBack"
+            }]
+        }],
+        "navigation": [{
+            "navigationButtons": [{
+                "linePlotBtn": "chartParametersPage",
+                "continueLineChartBtn": "chartPlotPage",
+                "ratingPlotBtn": "ratingParametersPage",
+                "continueRatingBtn": "ratingPlotPage"
+            }]
+        }]
+    }]
+}
